@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Returns the movies that match the query 1`] = `
+Array [
+  ❄️👗 Frozen,
+  ️️️️❄️👗✌️ Frozen 2,
+  🔎🐠 Finding Nemo,
+  👊💥🐼 Kung Fu Panda,
+]
+`;

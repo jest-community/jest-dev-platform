@@ -6,3 +6,7 @@ Jest is a highly extensible testing framework and the community has many package
 
 - Extend `expect` with custom matcher: see [./expect](./expect)
 
+## Snapshot serializer Exercise
+
+- Add customer snapshot serializer: see [./snapshot-serializer](./snapshot-serializer)
+
