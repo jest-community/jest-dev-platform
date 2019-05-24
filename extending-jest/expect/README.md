@@ -1,14 +1,18 @@
-# Custom assertions
+# Custom matchers
 
-Jest allows you to extend `expect` using `expect.extend` so that you can build bespoke custom matchers that give error messages specific to your requirements.
+Jest allows you to extend `expect` using `expect.extend` API so that you can build bespoke custom matchers that give error messages specific to your requirements.
 
-In this task we have a simple `Counter` component which takes two props: 
+In this task we have a `Counter` component: 
 
 ```ts
-{ 
-  count: number,
-  onClick: () => void
-}
+const Counter = ({ count: defaultCount }) => {
+  const [count, setCount] = React.useState(defaultCount);
+  return (
+    <button className={`count ${isEven(count) ? 'even' : 'odd'}`} id={COUNTER_ID} onClick={() => setCount(count + 1)}>
+      {count}
+    </button>
+  );
+};
 ```
 
 When rendering with an even number then the count will be displayed with an `even` className and an `odd` className when the count is odd.
@@ -43,7 +47,7 @@ This is slightly better as it points out that the value `even` was not in the `D
 
 ### Good
 
-The final suite shows an example of *Good* assertions, that will result in error messages like:
+The final suite shows an example of *good* assertions, that will result in error messages like:
 
 ```
 expect(received).toHaveClassName(expected)
