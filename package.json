@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "jest-dev-platform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:thymikee/jest-dev-platform.git",
+  "author": "Michał Pierzchała <thymikee@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "extending-jest/*",
+      "multiple-projects",
+      "runners",
+      "watch-plugins"
+    ]
+  }
+}
