@@ -90,8 +90,7 @@ describe('Jest workshop', () => {
   describe.skip('good', () => {
     test('renders with odd class name when given an initial count which is odd', () => {
       ReactDOM.render(<Counter count={1} />, div);
-      expect(null).toHaveClassName('even');
-      expect(document.getElementById(COUNTER_ID)).toHaveClassName('even');
+      expect(document.getElementById(COUNTER_ID)).toHaveClassName('odd');
       expect(document.getElementById(COUNTER_ID)).not.toHaveClassName('even');
     });
 
