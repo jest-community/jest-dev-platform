@@ -1,7 +1,6 @@
 {
   "name": "expect",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
@@ -10,22 +9,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "react-test-renderer": "^16.8.6"
+  "scripts": {
+    "test": "jest"
   }
 }
