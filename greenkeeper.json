@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "extending-jest/expect/package.json",
+        "extending-jest/snapshot-serializer/package.json",
+        "multi-projects/package.json",
+        "runners/package.json",
+        "watch-plugins/package.json"
+      ]
+    }
+  }
+}
