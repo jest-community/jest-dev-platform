@@ -1,5 +1,7 @@
 # Embracing Jest as a development platform
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jest-community/jest-dev-platform.svg)](https://greenkeeper.io/)
+
 Learn how to use Jest as a platform to power your development flow.
 
  - Running tests for the browser or node
